@@ -1,0 +1,192 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html,body{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 100px;
+    background-color: rgb(0, 0, 0);
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.nav-item{
+    font-size: 25px;
+}
+
+.title{
+    font-size: 45px;
+    text-transform: uppercase;
+}
+
+.nav-divide{
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+main{
+    width: 70vw;
+    margin: auto;
+    font-family: "Poppins", sans-serif;
+}
+
+.main_txt{
+    margin-top: 30px;
+}
+
+.main_txt .heading{
+    font-size: 50px;
+    font-weight: 500;
+}
+
+.main_txt .quote{
+    font-size: 1.4rem;
+}
+
+.main_txt span{
+    font-size: 1.1rem;
+}
+
+.books{
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0,1fr));
+    gap: 10px;
+    margin-top: 4vh;
+}
+
+.books .box{
+    height: 47vh;
+    display: flex;
+    align-items: end;
+    background-size: cover;
+    background-position: top;
+}
+
+.box .text{
+    width: 100%;
+    padding: 6px 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.books .first{background-image: url(https://m.media-amazon.com/images/I/81TRngA2x-L._AC_UF1000,1000_QL80_.jpg);}
+.books .second{background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1190035751i/1899430.jpg);}
+.books .third{background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688011813i/27362503.jpg);}
+.books .fourth{background-image: url(https://m.media-amazon.com/images/I/8191amync3L._SY466_.jpg);}
+.books .fifth{background-image: url(https://m.media-amazon.com/images/I/51sutb206JL._SY445_SX342_.jpg);}
+.books .sixth{background-image: url(https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg);}
+.books .seventh{background-image: url(https://m.media-amazon.com/images/I/31EnOHF34zL._AC_UF1000,1000_QL80_.jpg);}
+
+footer{
+    height: 25vh;
+    background-color: black;
+    margin-top: 45px;
+}
+
+footer .content{
+    width: 70vw;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.flex-right{
+    display: flex;
+    gap: 65px;
+}
+
+.icon svg{
+    margin-right: 0.2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: 	#A9A9A9;
+}
+
+@media screen and (max-width: 768px) {
+    main{
+        width: 92vw;
+    }
+    .books .box{
+        height: 40vh;
+    }
+    .books{
+        grid-template-rows: 40vh;
+        grid-template-columns: repeat(auto-fit, minmax(140px,1fr));
+        gap: 0.8rem;
+    }
+    .main_txt{
+        margin-top: 16px;
+    }
+    .main_txt .heading{
+        font-size: 39px;
+        font-weight: 600;
+    }
+    .main_txt .quote{
+        line-height: 100%;
+    }
+    .navbar{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .options{
+        gap: 4vw;
+    }
+    .nav-item{
+        font-size: 22px;
+    }
+    .title{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .nav-item span{
+        display: none;
+    }
+    footer{
+        margin-top: 25px;
+    }
+    footer .content{
+        width: 90vw;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: 19px;
+        padding: 20px 0px 0px 0px;
+    }
+    .flex-right{
+        flex-direction: column;
+        gap: 10px;
+    }
+}

@@ -1,0 +1,368 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+html{
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+main, body{
+    width: 100%;
+    overflow-x: hidden;
+}
+
+.Landing_Pg{
+    display: flex;
+    width: 100vw;
+    height: 85vh;
+    position: absolute;
+    top: 0px;
+    z-index: -10;
+    overflow: hidden;
+}
+
+.Landing_Pg .first{
+    width: 22%;
+    height: 85vh;
+    background-color: black;
+}
+
+.Landing_Pg .second{
+    width: 58%;
+    height: 85vh;
+    background-image: url(./Assets/Images/batman-wide-wallpaper_022007999_34.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.Landing_Pg .third{
+    width: 20%;
+    height: 85vh;
+    background-color: black;
+}
+
+.navbar{
+    width: 100vw;
+    font-family: "Poppins", sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+    padding: 5px 100px;
+    background-color: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+}
+
+.options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-item{
+    font-size: 25px;
+    margin-left: 2vw;
+}
+
+.title{
+    font-size: 45px;
+    margin-right: 20px;
+    text-transform: uppercase;
+}
+
+.nav-divide{
+    height: 6px;
+    background-color: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(7px);
+}
+
+.landing-text{
+    position: absolute;
+    bottom: 10vh;
+    left: 15vw;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Monument', sans-serif;
+}
+
+.landing-text h2{
+    font-size: 27px;
+    letter-spacing: 2px;
+}
+
+.landing-text h1{
+    font-size: 45px;
+    letter-spacing: 5px;
+}
+
+.landing-text span{
+    letter-spacing: -10px;
+}
+
+.Landing_Pg .img2{
+    background-image: url(https://i.pinimg.com/564x/57/88/9f/57889f43d7f38c713b59560608e236cc.jpg);
+    height: 45vh;
+    width: 15vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    right: 14.6vw;
+    top: 25vh;
+}
+
+.Landing_Pg .scroll-txt{
+    position: absolute;
+    transform: rotate(90deg);
+    transform-origin: 0% 0%;
+    left: 85.5vw;
+    white-space: nowrap;
+}
+
+.scroll-txt h1{
+    text-transform: uppercase;
+    font-family: 'Monument', sans-serif;
+    font-size: 50px;
+    font-weight: 800;
+    margin-left: 30px;
+    color: transparent;
+    letter-spacing: 5px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    display: inline-block;
+    animation-name: scroll;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: reverse;
+}
+
+@keyframes scroll{
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 32px));
+    }
+}
+
+.compensate{
+    height: 73.4vh;
+    margin-bottom: 25px;
+}
+
+.Pg-Reviews{
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    width: 70vw;
+    margin: auto;
+    padding-bottom: 30px;
+}
+
+.Pg-Reviews .s{
+    display: none;
+}
+
+.Flex-Head{
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.Flex-Head .review{
+    font-size: 35px;
+}
+
+.Flex-Head .view-more{
+    font-size: 1.1rem;
+}
+
+.line{
+    height: 3px;
+    background-color: black;
+    margin-bottom: 10px;
+}
+
+.books, .Anime, .Movies{
+    display: flex;
+    height: 42vh;
+    gap: 15px;
+    overflow-x: auto;
+    scrollbar-width: none;
+}
+
+.books .box, .Anime .box, .Movies .box {
+    display: flex;
+    align-items: end;
+    min-width: 220px;
+    background-size: cover;
+    background-position: center;
+}
+
+.box .text{
+    width: 100%;
+    padding: 6px 8px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    text-transform: uppercase;
+    line-height: 1.2rem;
+    font-size: 1.08rem;
+    font-weight: 600;
+}
+
+.star span{
+    font-weight: 400;
+}
+
+.books .first{background-image: url(https://m.media-amazon.com/images/I/81TRngA2x-L._AC_UF1000,1000_QL80_.jpg);}
+.books .second{background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1190035751i/1899430.jpg);}
+.books .third{background-image: url(https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1688011813i/27362503.jpg);}
+.books .fourth{background-image: url(https://m.media-amazon.com/images/I/8191amync3L._SY466_.jpg);}
+.books .fifth{background-image: url(https://m.media-amazon.com/images/I/51sutb206JL._SY445_SX342_.jpg);}
+.books .sixth{background-image: url(https://upload.wikimedia.org/wikipedia/en/5/5c/Harry_Potter_and_the_Chamber_of_Secrets.jpg);}
+.books .seventh{background-image: url(https://m.media-amazon.com/images/I/31EnOHF34zL._AC_UF1000,1000_QL80_.jpg);}
+
+.Anime .first{background-image: url(https://m.media-amazon.com/images/M/MV5BYWRkMDQzYTMtMzg2Mi00Mzc0LWIyZWEtMDRiOWJmOTAwYWIyXkEyXkFqcGdeQXVyMTUyNjc3NDQ4._V1_QL75_UY281_CR4,0,190,281_.jpg);}
+.Anime .second{background-image: url(https://i.redd.it/izg4p0t3jen71.jpg);}
+.Anime .third{background-image: url(https://upload.wikimedia.org/wikipedia/en/7/74/Code_Geass_R1_box_set_cover.jpg);}
+.Anime .fourth{background-image: url(https://ww6.gogoanimes.fi/cover/86.png);}
+.Anime .fifth{background-image: url(https://m.media-amazon.com/images/M/MV5BY2VlYjFjZTItNWY4My00ZGUwLThjNjItMzdkMjViMjlkZDI3XkEyXkFqcGdeQXVyMzI2Mjc1NjQ@._V1_.jpg);}
+.Anime .sixth{background-image: url(https://ww6.gogoanimes.fi/cover/jujutsu-kaisen-tv.png);}
+.Anime .seventh{background-image: url(https://m.media-amazon.com/images/M/MV5BYzVmNmM0N2EtNTA3MS00NjE5LWFhMDMtMjZhZjlmMjE3OTUyXkEyXkFqcGdeQXVyMTA0MTM5NjI2._V1_.jpg);}
+
+.Movies .first{background-image: url(https://m.media-amazon.com/images/M/MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_.jpg);}
+.Movies .second{background-image: url(https://m.media-amazon.com/images/M/MV5BMTMxNTMwODM0NF5BMl5BanBnXkFtZTcwODAyMTk2Mw@@._V1_.jpg);}
+.Movies .third{background-image: url(https://m.media-amazon.com/images/M/MV5BY2QzYTQyYzItMzAwYi00YjZlLThjNTUtNzMyMDdkYzJiNWM4XkEyXkFqcGdeQXVyMTkxNjUyNQ@@._V1_.jpg);}
+.Movies .fourth{background-image: url(https://m.media-amazon.com/images/M/MV5BNmYzMWVjNmQtNjJjNy00M2Y4LTkzZjQtZWQ5NmYzMjRjMDIzXkEyXkFqcGdeQXVyMTM1NjM2ODg1._V1_FMjpg_UX1000_.jpg);}
+.Movies .fifth{background-image: url(https://lumiere-a.akamaihd.net/v1/images/image_a094a4bd.jpeg);}
+.Movies .sixth{background-image: url(https://resizing.flixster.com/QinjqBf6Jd5fabcy3sAWzMyP1ZQ=/fit-in/705x460/v2/https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p10099311_p_v12_bc.jpg);}
+.Movies .seventh{background-image: url(https://resizing.flixster.com/-XZAfHZM39UwaGJIFWKAE8fS0ak=/v3/t/assets/p8338313_p_v8_aq.jpg);}
+
+footer{
+    height: 25vh;
+    background-color: black;
+    margin-top: 30px;
+}
+
+footer .content{
+    width: 70vw;
+    height: inherit;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: white;
+    font-size: 1.5rem;
+}
+
+.flex-right{
+    display: flex;
+    gap: 65px;
+}
+
+.icon svg{
+    margin-right: 0.2rem;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: 	#A9A9A9;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar{
+        flex-direction: column;
+    }
+    .options{
+        gap: 8px;
+    }
+    .nav-item{
+        font-size: 22px;
+    }
+    .title{
+        font-size: 35px;
+        font-weight: 600;
+    }
+    .nav-item span{
+        display: none;
+    }
+    footer{
+        margin-top: 25px;
+    }
+    footer .content{
+        width: 90vw;
+        justify-content: space-around;
+        align-items: baseline;
+        font-size: 19px;
+        padding: 20px 0px 0px 0px;
+    }
+    .flex-right{
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .Landing_Pg .first{
+        width: 18%;
+    }
+    .Landing_Pg .second{
+        width: 66%;
+    }
+    .Landing_Pg .third{
+        width: 16%;
+    }
+    .landing-text{
+        bottom: 8vh;
+        left: 5vw;
+    }
+    .landing-text h2{
+        font-size: 17px;
+        letter-spacing: 0.2px;
+    }
+    .landing-text h1{
+        font-size: 35px;
+        letter-spacing: 5px;
+        font-weight: 700;
+    }
+    .landing-text span{
+        display: none;
+    }
+    .Landing_Pg .img2{
+        height: 45vh;
+        width: 22vw;
+        right: 6.6vw;
+        top: 25vh;
+    }
+    .scroll-txt{
+        display: none;
+    }
+
+    .compensate{
+        margin-bottom: 10px;
+    }
+    .Pg-Reviews{
+        width: 92vw;
+        padding-bottom: 22px;
+    }
+    .Pg-Reviews span{
+        display: none;
+    }
+    .Pg-Reviews .s{
+        display: inline;
+    }
+    .star span{
+        display: inline;
+    }
+    .books .box, .Anime .box, .Movies .box {
+        min-width: 150px;
+    }
+} 
